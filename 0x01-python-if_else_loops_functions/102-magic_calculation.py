@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-def uppercase(str):
-    """Print a string in uppercase."""
-    for c in str:
-        if ord(c) >= 97 and ord(c) <= 122:
-            c = chr(ord(c) - 32)
-        print("{}".format(c), end="")
-    print("")
+def magic_calculation(a, b, c):
+    if a < b:
+        return(c)
+    elif c > b:
+        return(a + b)
+    else:
+        return(a * b - c)
