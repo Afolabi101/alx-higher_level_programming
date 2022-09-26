@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-def replace_in_list(my_list, idx, element):
-    if idx < 0 or idx >= len(my_list):
-        return my_list
-    my_list[idx] = element
-    return my_list
+def multiple_returns(sentence):
+    if sentence != '':
+        first_char = sentence[0]
+    else:
+        first_char = None
+    return (len(sentence), first_char)
